@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series");
                 Console.WriteLine(" 2.PerfectNumber \n 3. PrimeNumber \n 4. ReverseNumber \n 5. CouponNumber ");
-                Console.WriteLine(" 6.Exit ");
+                Console.WriteLine(" 6.SimulateStopwatch \n 7. Exit ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -40,8 +40,13 @@
                         cn.CouponNumber(N);
                         break;
 
-
                     case 6:
+                        LogicalProblems sl = new LogicalProblems();
+                        sl.SimulateStopwatch();
+                        break;
+
+
+                    case 7:
                         flag = false;
                         break;
                 }
