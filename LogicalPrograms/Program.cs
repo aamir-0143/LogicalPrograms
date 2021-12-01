@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series");
-                Console.WriteLine(" 2.PerfectNumber \n 3. Exit");
+                Console.WriteLine(" 2.PerfectNumber \n 3. PrimeNumber \n 4. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,8 +22,14 @@
                         num.PerfectNumber();
                         break;
 
-
                     case 3:
+                        LogicalProblems number = new LogicalProblems();
+                        number.PrimeNumber();
+                        break;
+
+
+
+                    case 4:
                         flag = false;
                         break;
                 }
