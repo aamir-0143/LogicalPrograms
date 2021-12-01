@@ -71,5 +71,18 @@ namespace LogicalPrograms
                 Console.WriteLine(num + " is not a Prime number");
             }
         }
+        public void ReverseNumber() 
+        {
+            Console.WriteLine("Enter a Number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int revNum = 0, rem;
+            while (num > 0)
+            {
+                rem = num % 10;
+                revNum = revNum * 10 + rem;
+                num = num / 10;
+            }
+            Console.WriteLine("The Reverse num is : " + revNum);
+        }
     }
 }
