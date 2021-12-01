@@ -8,7 +8,8 @@
             while (flag)
             {
                 Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series");
-                Console.WriteLine(" 2.PerfectNumber \n 3. PrimeNumber \n 4. ReverseNumber \n 5. Exit");
+                Console.WriteLine(" 2.PerfectNumber \n 3. PrimeNumber \n 4. ReverseNumber \n 5. CouponNumber ");
+                Console.WriteLine(" 6.Exit ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,10 +33,15 @@
                         rev.ReverseNumber();
                         break;
 
-
-
-
                     case 5:
+                        Console.Write("How many numbers you wants to generate :");
+                        int N = Convert.ToInt32(Console.ReadLine());
+                        LogicalProblems cn = new LogicalProblems();
+                        cn.CouponNumber(N);
+                        break;
+
+
+                    case 6:
                         flag = false;
                         break;
                 }
